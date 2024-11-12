@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message SystemInfo 
+{
+    string version = 1;
+    int32 size = 2;
+    bool is_active = 3;
+    repeated float quarters = 4;
+}
