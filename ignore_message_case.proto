@@ -1,0 +1,6 @@
+syntax="proto3";
+
+message skip_me 
+{
+    bool is_true = 1;
+}
