@@ -1,9 +1,11 @@
-name: lint
+# from https://github.com/marketplace/actions/run-protolint-with-reviewdog
+
+name: yoheimuta-lint
 on: [pull_request]
 permissions: write-all
 jobs:
   lint:
-    name: lint
+    name: yoheimuta-lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
