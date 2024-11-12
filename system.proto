@@ -1,9 +1,16 @@
 syntax = "proto3";
 
+enum State {
+    STATE_UNSPECIFIED = 0;
+    STATE_OFF = 1;
+    STATE_ON = 2;
+}
+
 message SystemInfo 
 {
     string version = 1;
     int32 size = 2;
     bool is_active = 3;
     repeated float quarters = 4;
+    State state = 5;
 }
