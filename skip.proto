@@ -1,0 +1,13 @@
+syntax="proto3";
+
+enum BAD_ENUM {
+    ZERO = 0;
+    one = 1;
+    Two = 2;
+}
+
+message skip_me 
+{
+    bool is_true = 1;
+    BAD_ENUM bad_enum = 2;
+}
